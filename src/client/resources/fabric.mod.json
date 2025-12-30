@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "borderlesswindowed",
+	"version": "${version}",
+	"name": "BorderlessWindowed",
+	"description": "Makes Minecraft run in borderless windowed mode.",
+	"authors": [
+		"luchermkens"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/LucHermkens/BorderlessWindowed"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"nl.luchermkens.borderlesswindowed.BorderlessWindowedClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "borderlesswindowed.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21"
+	}
+}
